@@ -33,9 +33,6 @@ sudo apt install git
 git init
 git add . 
 git commit -m "Crear MarkDown, hacer el repositorio de git y subirlo todo."
-git branch -M main
-git remote add origin JaviBesada/Lenguaje-de-Marcas.git
-git push -u origin main
 ``` 
 
 ## Pligins instalados
