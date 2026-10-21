@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form action="incidencia.php" method="get" name="Formulario de incidencia">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <br>
+            <label for="Usuario">Usuario</label>
+            <br>
+            <input type="text" name="Usuario" id="Usuario" placeholder="Nombre y apellidos" size="20">
+            <br>
+            <input type="radio" name="Alumno" value="alumn"> Alumno <br>
+            <input type="radio" name="Profesor" value="prof"> Profesor <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dónde se produce</legend>
+            <input type="radio" name="Todo el departamento" value="dep"> Todo el departamento <br>
+            <input type="radio" name="Todo el aula" value="aula"> Todo el aula <br>
+            <input type="radio" name="Solo en un equipo" value="equipo"> Solo en un equipo <br>
+            <label for="identifica">Identifica el dpto ,aula o equipo</label>
+            <input type="text" name="identifica" id="identificar"> 
+        </fieldset>
+        <fieldset>
+            <legend>Informacion sobre la incidencia</legend>
+            Descripcion de la incidencia <br>
+            <textarea name="Descripcion" id="Descripcion" placeholder="Describe el problema con detalle" cols="120" rows="10"></textarea> <br>
+            Nivel de urgencia: <br>
+            <input type="radio" name="Alto" value="alto"> Alto <br>
+            <input type="radio" name="Medio" value="medio"> Medio <br>
+            <input type="radio" name="Bajo" value="bajo"> Bajo <br>
+            Me gustaria ser avisado por email cuando se resuelva la incidencia
+            <input type="checkbox" name="avisar" id="avisar" value="avisar_email" checked> <br>
+        </fieldset>
+        <button type="submit">Entrar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>
