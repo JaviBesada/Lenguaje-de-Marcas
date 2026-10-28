@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form action="reserva.php" method="get" name="Reserva de habitacion">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <br>
+            <label for="Usuario">Nombre</label>
+            <br>
+            <input type="text" name="Usuario" id="Usuario" maxlength="100" required autofocus>
+            <br>
+            <label for="Telefono">Telefono</label>
+            <br>
+            <input type="number" name="Telefono" id="Telefono" pattern="[0-9]{9}" required>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="color">Elija un color:</label><br>
+            <select name="Color" size="4">
+                <option value="azul" selected>Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarilla">Amarilla</option>
+                <option value="morada">Morada</option>
+            </select><br>
+            <label for="habitacion">Elija habitacion:</label><br>
+            <select name="habitacion">
+                <option value="doble" selected>Doble</option>
+                <option value="individual">Individual</option>
+            </select><br>
+            <select name="provincia">
+                <label for="provincia">Provincia:</label>
+                    <select name="provincia" id="provincia" >
+                        <optgroup label="Galicia">
+                            <option value="C">La Coruña</option>
+                            <option value="L">Lugo</option>
+                            <option value="P">Pontevedra</option>
+                            <option value="o">Ourense</option>
+                        </optgroup>
+                        <optgroup label="Pais Vasco">
+                            <option value="V">Vizcaya</option>
+                            <option value="G">Guipuzcua</option>
+                            <option value="A">Alava</option>
+                        </optgroup>
+                    </select>
+            </select>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>
