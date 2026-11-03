@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <form action="validar.php" method="get" name="Formularios">
+        <legend for="telefono">Telefono</legend>
+        <input type="tel" name="telefono" id="telefono" placeholder="9 numeros" autocomplete="tel" pattern="[0-9]{9}" minlength="9" maxlength="9">
+        <legend for="email">Correo Electronico</legend>
+        <input type="email" name="email" id="email" placeholder="El formato correcto es nombre + @ + servidor de correo" maxlength="50" autocomplete="email" pattern="[a-zA-Z0-9@]+">
+    </form>
+</body>
+</html>

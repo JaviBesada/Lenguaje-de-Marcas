@@ -17,8 +17,9 @@
             <br>
             <label for="Telefono">Telefono</label>
             <br>
-            <input type="number" name="Telefono" id="Telefono" pattern="[0-9]{9}" required>
+            <input type="text" name="Telefono" id="Telefono" pattern="[0-9]{9}" placeholder="9 numeros" maxlength="9" minlength="9" required>
             <br>
+            DNI (Seleccione un archivo de imagen) <input type="file" accept=".jpg, .png">
         </fieldset>
         <fieldset>
             <legend>Datos de la reserva</legend>
@@ -34,7 +35,6 @@
                 <option value="doble" selected>Doble</option>
                 <option value="individual">Individual</option>
             </select><br>
-            <select name="provincia">
                 <label for="provincia">Provincia:</label>
                     <select name="provincia" id="provincia" >
                         <optgroup label="Galicia">
