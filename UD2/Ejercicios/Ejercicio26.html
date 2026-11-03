@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Page Title</title>
     <link rel='stylesheet' href='main.css'>
 </head>
+
 <body>
-    <form action="validar.php" method="get" name="Formularios">
+    <form action="validar.php" method="get" name="Formularios"></form>
+    <fieldset>
+        <legend>Para datos personales</legend>
         <legend for="telefono">Telefono</legend>
-        <input type="tel" name="telefono" id="telefono" placeholder="9 numeros" autocomplete="tel" pattern="[0-9]{9}" minlength="9" maxlength="9">
+        <input type="tel" name="telefono" id="telefono" placeholder="9 numeros" autocomplete="tel" pattern="[0-9]{9}"
+            minlength="9" maxlength="9">
         <legend for="email">Correo Electronico</legend>
-        <input type="email" name="email" id="email" placeholder="El formato correcto es nombre + @ + servidor de correo" maxlength="50" autocomplete="email" pattern="[a-zA-Z0-9@]+">
+        <input type="email" name="email" id="email" placeholder="El formato correcto es nombre + @ + servidor de correo"
+            maxlength="50" autocomplete="email" pattern="[a-zA-Z0-9@]+">
+    </fieldset>
+    <fieldset>
+        <legend>Para valores numericos</legend>
+        <legend for="num_pers">Numero de personas</legend>
+        <input type="number" name="num_persona" id="num_persona" value="6">
+        <legend for="puntuacion">Mueve la barra para indicar puntuación(Del 1 al 10)</legend>
+        <input type="range" name="puntuacion" id="puntuacion" min="0" max="10">
+    </fieldset>
+    <fieldset>
+        <legend>Otros tipos</legend>
+        <legend for="color">Color</legend>
+        <input type="color" name="color" id="color">
+    </fieldset>
+    <fieldset>
+        <legend>Para Fechas</legend>
+        <legend for="fecha">Seleccione un dia(Hasta fin de año):</legend>
+        <input type="date" name="fecha" id="fecha" max="31-12-2026">
+        <legend for="hora">Seleccione una hora:</legend>
+        <input type="time" name="hora" id="hora">
+        <legend for="mes">Seleccione un mes(Hasta diciembre del 2026)</legend>
+        <input type="month" name="mes" id="mes" max="31-12-2026">
+        <legend for="semana">Seleccione una semana</legend>
+        <input type="week" name="semana" id="semana">
+        <legend for="fech_hora">Seleccione fecha y hora</legend>
+        <input type="datetime-local" name="fech_hora" id="fech_hora">
+    </fieldset>
+    <button type="submit">Validar</button>
+        <img src="../Ejercicios/imagenes/check.png" alt="Validar"/>
+    <button type="reset">Limpiar</button>
+        <img src="../Ejercicios/imagenes/cruz.png" alt="Validar"/>
     </form>
 </body>
+
 </html>
